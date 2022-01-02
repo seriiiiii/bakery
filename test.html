@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="channel-add-button" href="#" onclick="void addChannel();">
+        <img
+          src="/tool/resource/static/img/button/channel/add/channel_add_small.png"
+        />
+      </a>
+      <script type="text/javascript">
+        function addChannel() {
+          Kakao.Channel.addChannel({
+            channelPublicId: '_xcLqmC',
+          })
+        }
+      </script>
+</body>
+</html>

@@ -27,7 +27,11 @@
         </div>
         <div class="btn">
             <button class="call"><a href="#"><img src="images/call.png" alt="no" /></a></button>
-            <button class="talk"><a href="#"><img src="images/talk.png" alt="no" /></a></button>
+            <button class="talk">
+                <a href="javascript:void kakaoChatStart()" class="kakaoChatPc hidden-md hidden-sm hidden-xs">
+                    <img src="images/talk.png" width="72px" height="72px">
+                </a>
+            </button>
         </div>
         <!--pop-->
         <div id="popup_body">
@@ -43,6 +47,15 @@
             </div>
         </div>
     </div>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type='text/javascript'>
+        Kakao.init('013dc6068a1d60696adec52696409da4'); // 사용할 앱의 JavaScript키를 입력해 주세요.
+        function kakaoChatStart() {
+            Kakao.Channel.chat({
+                channelPublicId: '_bHEGb' // 카카오톡 채널 홈 URL에 명시된 ID를 입력합니다.
+            });
+        }
+    </script>
     <script src="js/bakery.js" defer="defer" type="text/javascript" text="javascript"></script>
 </body>
 
