@@ -38,7 +38,7 @@ button{cursor:pointer;}
     background-size: 100%;
     background: url(../images/background.jpeg) no-repeat center 100%;
 }
-.main{width: 300px;
+.main{width: 500px;
     z-index:3;
     position: absolute;
     margin: 0 auto;
